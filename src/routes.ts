@@ -8,5 +8,12 @@ export const createCourse = (req: Request, res: Response) => {
     educator: "Dani",
   };
   CreateCourseService.execute(data);
+
+  const data2 = {
+    name: "Reacjs",
+    // duration: 10,
+    educator: "Diego",
+  };
+  CreateCourseService.execute(data2);
   return res.send();
 };
