@@ -4,8 +4,14 @@
  * educator - string
  */
 
+interface iCourse {
+  name: String;
+  duration: number;
+  educator: String;
+}
+
 class CreateCourseService {
-  execute(name: String, duration: number, educator: String) {
+  execute({ duration, educator, name }: iCourse) {
     console.log(name, duration, educator);
   }
 }
